@@ -1,0 +1,9 @@
+#!/bin/bash
+#touch $1 
+#mv $1 $2
+#nl $1 | head -n10 > $2
+#cat $2
+#head -n20 $1 > $2
+grep Toscana $1 > $2 | cut -f1 -d ',' $2
+cat $2
+
